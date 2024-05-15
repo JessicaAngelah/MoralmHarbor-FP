@@ -1,0 +1,350 @@
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  position: relative;
+  background: linear-gradient(to right, #467E18 0%, #467E18 12%, #699744 10%, #699744 15%, #81A862 20%, #81A862 20%, #90B274 20%, #90B274 100%);
+}
+
+.gradient-bar {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.segment {
+  height: 100%;
+}
+
+.segment1 {
+  background-color: #467E18;
+  width: 20%;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.segment2 {
+  background-color: #699744;
+  width: 5%;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.segment3 {
+  background-color: #81A862;
+  width: 5%;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.segment4 {
+  background-color: #90B274;
+  width: 100%;
+}
+
+.nav-left {
+  z-index: 1; /* Ensure it stays on top */
+  margin-left: 1%;
+}
+
+.nav-right {
+  z-index: 1; /* Ensure it stays on top */
+  margin-right: 5%;
+  display: flex;
+  align-items: center;
+}
+
+.logoimg {
+  margin-left: 20px; 
+  max-width: 130px; /* Adjust size as needed */
+}
+
+.useravatar {
+  height: 40px;
+  margin-right: 20px;
+}
+
+.user-info {
+  font-size: 12px;
+  white-space: nowrap;
+  line-height: 0.1;
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+}
+
+
+.ShipmentTracking {
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+  padding-left: 40px;
+  font-size: 15px; 
+  padding-top: 10px;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.filter button {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  border: none;
+  padding: 0;
+  margin: auto;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 150px;
+  height: 40px; /* Adjust height to match your design */
+  overflow: hidden;
+  background-color: #467E18;
+}
+
+.filter .button-text {
+  flex: 1;
+  background-color: #467E18; /* Dark green */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.filter .button-count {
+  background-color: #90B274; /* Light green */
+  color: black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  width: 30px; 
+  height: 40px;
+}
+
+.filter button:hover .button-text {
+  background-color: #90B274; /* Light green */
+  color: black;
+}
+
+.filter button:hover .button-count {
+  background-color: #467E18; /* Dark green */
+  color: white;
+}
+
+
+.filterbox{
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 8px;
+}
+
+.filter button:hover {
+  background-color: #90B274;
+  color: black;
+}
+
+.filter .button-text {
+  flex-grow: 1;
+}
+
+.filter .button-count {
+  background-color: #90B274;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 10px; 
+}
+
+.Box{
+  background: #CEDDC2;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 8px;
+}
+
+.PackageBox {
+  max-width: 80%;
+  margin: auto;
+  background: #CEDDC2;
+  padding: 10px;
+  height: 470px;
+  border-radius: 8px;
+  overflow-y: auto;
+  overflow: auto;
+  padding-top: 10px;
+}
+
+.PackageBox::-webkit-scrollbar {
+  width: 9px;
+}
+
+.PackageBox::-webkit-scrollbar-thumb {
+  background-color: #467E18; 
+  border-radius: 6px;
+}
+
+.PackageBox::-webkit-scrollbar-track {
+  background-color: #CEDDC2; 
+}
+
+.PackageList {
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  position: relative;
+}
+
+.PackageList p {
+  margin: 5px 0; 
+}
+
+.PackageList p strong {
+  font-weight: bold;
+}
+
+.PackageList p strong.underlined {
+  text-decoration: underline;
+}
+.PackageList p strong.underlined {
+  text-decoration: underline;
+}
+
+.PackageList p strong.small {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.pending {
+  color: #9D9023;
+  background-color: #E5D32F;
+  padding:4px;
+  border-radius: 5px;
+}
+
+.arrived {
+  color: #9D9023;
+  background-color: #E5D32F;
+  padding:4px;
+  border-radius: 5px;
+}
+
+.cancelled {
+  color: red;
+  background-color: rgb(255, 190, 190);
+  padding:4px;
+  border-radius: 5px;
+}
+
+.received {
+  color: green;
+  background-color: lightgreen;
+  padding:4px;
+  border-radius: 5px;
+}
+
+
+
+.column {
+  flex: 1;
+  padding: 10px;
+}
+
+.leftcolumn, .rightcolumn {
+  width: 50%;
+}
+
+
+.statsbutton {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #033324;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 30px;
+}
+
+.statsbutton:hover {
+  background-color: #0E8E66;
+}
+
+.ellipsis {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1;
+  margin-right: 40px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 30px; 
+  right: 10px; 
+  background-color: #90B274;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: white; 
+}
+
+
+.dropdown-menu button:hover {
+  background-color: #a8c690;
+}
+
+
+.dropdown-menu button + button {
+  border-top: 1px solid #ccc;
+}
+
+.received-date {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 30px;
+}
+
+
